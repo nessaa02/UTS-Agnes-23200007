@@ -1,0 +1,817 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+   
+  body {
+    background-color:#dddddd;
+    font-family: sans-serif;
+  }
+   
+  .content { 
+    grid-area: content;
+  }
+   
+  .menu {
+    grid-area: menu;
+    background: linear-gradient(
+      to right,
+      rgb(203, 202, 202),
+      rgb(154, 152, 154),
+      rgb(98, 98, 99)
+    );
+    justify-content: center;
+  }
+     
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #b2b2b2;
+  }
+
+  .container {
+    font-size: 1.5em;
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 'menu' 'content' 'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 800px 250px;
+  }
+   
+  .content,
+  .menu,  
+  .footer {
+    padding: 1em;
+  }
+   
+  nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 20px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 30px;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+   
+  nav li {
+    list-style: none;
+    padding: 1em 0;
+  }
+   
+  nav li a {
+    color: rgb(246, 255, 255);
+    font-weight: 700;
+    opacity: 0.6;
+    text-decoration: none;  
+    transition: 0.3s;
+  }
+   
+  nav li a:hover {
+    opacity: 1;
+  }
+   
+  .home {
+    max-width: 90 px;
+    margin: auto;
+    text-align: center;
+  }   
+   
+  .home img {
+    width: 200px;
+  }
+   
+  .home h1 {
+    font-size: 2em;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium';
+    color: #373046;
+  }
+   
+  .home p {
+    font-weight: 300;
+    line-height: 1.3em;
+    color: #98abad;
+  }
+   
+  .email-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #373636;
+    font-weight: 700;
+    border: 2px solid #373636;
+    background: #ffffff;
+    padding: 0.5em 2em;
+    border-radius: 60px;
+    margin: 1em 0;
+    transition: 0.3s;
+  }
+   
+  .contact-btn {
+    display: inline-block;
+    text-decoration: none;
+    color:  #ffffff;
+    font-weight: 700;
+    border: 2px solid #373636;
+    background: #0b0b0b;
+    padding: 0.5em 2em;
+    border-radius: 60px;
+    margin: 1em 0;
+    transition: 0.3s;
+  }
+  
+  footer ul {
+    max-width: 640px;
+    margin: 2em auto;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+   
+  footer ul li {
+    list-style: none;
+    align-self: flex-end;
+  }
+   
+  footer ul li a {
+    text-decoration: none;
+    color: #c1c6ce;
+  }
+   
+  footer ul li img {
+    width: 30%;
+  }
+   
+  footer p {
+    font-size: 0.9em;
+    font-weight:bold;
+    color:#5c5b5b;
+    font-family: calibri;
+  }
+
+  footer p:nth-child(2){
+    font-size: 0.9em;
+    font-weight:bold;
+    color:#3f3e3e;
+    text-align: center;
+  }
+
+  #about
+    th{
+      text-align: left;
+      font-size: 1.4em;
+      font-family: Arial;
+    }
+
+    td{
+      text-align: left;
+      font-size: 1.4em;
+      font-family: Arial;
+    }
+
+    img{
+      width: 100%;
+      margin-bottom: 10px;
+      right: 80%;
+      margin-left: 80px;
+    }
+     
+    .judul{
+      text-align: center;
+      font-size: 1.8em;
+      font-family:'Times New Roman';
+            background: rgb(167, 158, 158);
+    }
+     
+    .blok{  
+      overflow: hidden;
+    }
+     
+    .kiri{
+      width: 20%;
+	    float: left;
+      margin-bottom: 180px;
+    }
+     
+    .kanan{
+      width: 70%;
+      padding:0px 20px;	
+      float: right;
+      margin-right: 80px;
+    }
+
+    #motto
+    .judul1{
+      text-align: center;
+      font-size: 1.8em;
+      font-family:'Times New Roman';
+            background: rgb(197, 187, 187);
+    }
+
+    .tengah {
+      font-weight: 300;
+      font-size: 1.5em;
+      font-family:Georgia;
+      line-height: 1.3em;
+      color: #9e1f1f;
+      background-color: rgb(225, 229, 205);
+      text-align: center;
+      margin-bottom: 180px;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+
+    #country
+    .judul2{
+      text-align: center;
+      font-size: 1.8em;
+      font-family:'Times New Roman';
+            background: rgb(203, 191, 191);
+    }
+
+    .tengah1 {
+      font-weight: 300;
+      font-size: 1em;
+      font-family:Georgia;
+      text-align: center;
+      text-decoration: none;
+      line-height: 1.3em;
+      color: #141242;
+      margin-bottom: 80px;
+      margin-left: 3%;
+      margin-right: 5%;
+    }
+
+    .tengah2 {
+      text-align: center;
+      width: 100%;
+    }
+    
+    .country-list {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .kartu-country {
+      width: 20%;
+      margin: 0 auto;
+    }
+  
+    .kartu-country img {
+      width: 100%;
+      border-radius: 50%;
+      float: right;     
+    }
+  
+    .kartu-country p {
+      font-family: 'comic sans ms';
+      font-weight: 800;
+      font-size: 25px;
+      text-align: center;
+      color: #364f6b;
+    }
+
+    .country-list1 {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .kartu-country1 {
+      width: 20%;
+      margin: 0 auto;
+    }
+  
+    .kartu-country1 img {
+      width: 100%;
+      border-radius: 50%; 
+      margin-top: 30%; 
+      float: right;   
+    }
+  
+    .kartu-country1 p {
+      font-family: 'comic sans ms';
+      font-weight: 800;
+      font-size: 25px;
+      text-align: center;
+      color: #364f6b;
+      margin-bottom: 180px;
+    }
+
+    #hobby
+    .judul3{
+      text-align: center;
+      font-size: 1.8em;
+      font-family:'Times New Roman';
+            background: rgb(210, 204, 204);
+    }
+
+    .tengah3 {
+      font-weight: 300;
+      font-size: 0.9em;
+      font-family:Georgia;
+      text-align: center;
+      text-decoration: none;
+      line-height: 1.3em;
+      color: #141242;
+      margin-bottom: 80px;
+      margin-left: 3%;
+      margin-right: 5%;
+    }
+
+    .tengah4 {
+      text-align: center;
+      width: 100%;
+    }
+    
+    .hobby-list {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .kartu-hobby {
+      width: 20%;
+      margin: 0 auto;
+    }
+  
+    .kartu-hobby img {
+      width: 100%;
+      border-radius: 50%;
+      float: right;     
+    }
+  
+    .kartu-hobby p {
+      font-family: 'comic sans ms';
+      font-weight: 800;
+      font-size: 25px;
+      text-align: center;
+      color: #364f6b;
+    }
+
+    .hobby-list1 {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .kartu-hobby1 {
+      width: 20%;
+      margin: 0 auto;
+    }
+  
+    .kartu-hobby1 img {
+      width: 100%;
+      border-radius: 50%; 
+      margin-top: 30%; 
+      float: right;   
+    }
+  
+    .kartu-hobby1 p {
+      font-family: 'comic sans ms';
+      font-weight: 800;
+      font-size: 25px;
+      text-align: center;
+      color: #364f6b;
+      margin-bottom: 180px;
+    }
+
+    #education
+    .judul4{
+      text-align: center;
+      font-size: 1.8em;
+      font-family:'Times New Roman';
+            background: rgb(177, 171, 171);
+    }
+
+    .tengah5 {
+      text-align: center;
+      width: 100%;
+      text-decoration: none;
+      line-height: 1.2em;
+      color: #141242;
+      font-size: 25px;
+    }
+    
+    .education-list {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .kartu-education {
+      width: 20%;
+      margin: 0 auto;
+    }
+  
+    .kartu-education img {
+      width: 100%;
+      border-radius: 50%;
+      float: right;
+      margin-top: 180px;      
+    }
+  
+    .kartu-education p {
+      font-family: 'comic sans ms';
+      font-weight: 800;
+      font-size: 20px;
+      text-align: center;
+      color: #364f6b;
+    }
+
+    #institute
+    .judul5{
+      text-align: center;
+      font-size: 1.8em;
+      font-family:'Times New Roman';
+            background: rgb(195, 186, 186);
+    }
+
+    .banner {
+      height: 60vh;
+      color: #0e0639;
+      z-index: 2;
+      background-image: url('itbss.jpeg');
+      background-size: cover;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:150px 0;
+      margin-bottom: 80px;
+    }
+
+    .banner:after {
+      content:'';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(159, 194, 242, 0.6);
+    }
+
+    .banner h2 {
+      z-index: 1;
+      padding: 20px 25px;
+      border:3px solid #fff;
+      border-radius: 20px 25px;
+    }
+
+    .itbss {
+      text-decoration: none;
+      font-family: 'Trebuchet MS';
+      color: #fff;
+    }
+
+    .visimisi{
+      text-align: center;
+	    padding:20px 0;
+	    color: #181818;
+	    margin: 30px;
+      font-size: 1em;
+      font-family: Arial;
+    }
+
+    .visimisi h3{
+      font-size: 2em;
+      text-align: center;
+      line-height: 1.5px;
+    }
+
+    .banner1 {
+      height: 60vh;
+      color: #0e0639;
+      z-index: 2;
+      background-image: url('https://itbss.ac.id/wp-content/uploads/2022/11/2.png');
+      background-size: cover;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:120px 0;
+      margin-top: 80px;
+      margin-bottom: 180px;
+    }
+
+    .banner1:after {
+      content:'';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(180, 207, 249, 0.415);
+    }
+
+    .banner1 h2 {
+      z-index: 1;
+      padding: 20px 25px;
+      border:4px solid #fff;
+      border-radius: 20px 25px;
+    }
+
+    #prodi
+    .judul6{
+      text-align: center;
+      font-size: 1.8em;
+      font-family:'Times New Roman';
+            background: rgb(215, 199, 199);
+    }
+
+    .banner2 {
+      height: 60vh;
+      color: #0e0639;
+      z-index: 2;
+      background-image: url('https://undiknas.ac.id/wp-content/uploads/2023/08/digital-online-marketing-man-analysis-sale-data-growth-strategy-investment-financial-scaled.jpg');
+      background-size: cover;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:120px 0;
+      margin-bottom: 80px;
+    }
+
+    .banner2:after {
+      content:'';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(180, 206, 249, 0.581);
+    }
+
+    .banner2 h2 {
+      z-index: 1;
+      padding: 20px 25px;
+      border:4px solid #fff;
+      border-radius: 20px 25px;
+    }
+
+    .visi{
+      text-align: center;
+	    padding:20px 0;
+	    color: #181818;
+	    margin: 30px;
+      font-size: 1em;
+      font-family: Arial;
+    }
+
+    .visi h3{
+      font-size: 2em;
+      text-align: center;
+      line-height: 1.5px;
+    }
+
+    .misi{
+      text-align: justify;
+	    padding:20px 0;
+	    color: #181818;
+	    margin: 30px;
+      font-size: 1em;
+      font-family: Arial;
+      margin-bottom: 150px;
+    }
+
+    .misi h3{
+      font-size: 2em;
+      text-align: center;
+      line-height: 1.5px;
+    }
+
+    #workexperience
+    .judul7{
+      text-align: center;
+      font-size: 1.8em;
+      font-family:'Times New Roman';
+            background: rgb(188, 173, 173);
+    }
+
+    .banner3 {
+      height: 60vh;
+      color: #0e0639;
+      z-index: 2;
+      background-image: url('gjm.jpeg');
+      background-size: cover;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:500px 0;
+      margin-bottom: 80px;
+    }
+
+    .banner3:after {
+      content:'';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(180, 206, 249, 0.492);
+    }
+
+    .banner3 h2 {
+      z-index: 1;
+      padding: 20px 25px;
+      border:4px solid #d93a3a;
+      border-radius: 20px 25px;
+    }
+
+    .gjm {
+      text-decoration: none;
+      font-family: 'Trebuchet MS';
+      color: #d93a3a;;
+    }
+
+    .workexperience {
+      max-width: 90 px;
+      margin: auto;
+      text-align: center;
+    }   
+     
+    .workexperience img {
+      width: 300px;
+      float: left;
+    }
+     
+    .workexperience p {
+      font-weight: 300;
+      line-height: 1.3em;
+      color: #98abad;
+    }
+     
+    .banner4 {
+      height: 60vh;
+      z-index: 2;
+      background-image: url('gjm2.jpeg');
+      background-size: cover;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 100px 0px;
+      margin-bottom: 180px;
+      margin-top: 320px;
+    }
+
+    .banner4:after {
+      content:'';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(180, 206, 249, 0.492);
+    }
+
+    .banner4 h2 {
+      z-index: 1;
+      padding: 20px 25px;
+      border:4px solid #ccef91;
+      border-radius: 20px 25px;
+      text-decoration: none;
+      font-family: 'Trebuchet MS';
+      color: #ccef91;
+      text-align: center;
+    }
+
+    #contact
+    .judul8{
+      text-align: center;
+      font-size: 1.8em;
+      font-family:'Times New Roman';
+            background: rgb(197, 185, 185);
+    }
+
+    input[type=text], select, textarea {
+      width: 100%; /* Full width */
+      padding: 12px; /* Some padding */ 
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 4px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 6px; /* Add a top margin */
+      margin-bottom: 16px; /* Bottom margin */
+      resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+    
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    /* Add a background color and some padding around the form */
+    .kartu-contact {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 80px;
+    }
+
+
+    
+     
+
+
+
+  @media screen and (min-width: 1040px) {
+    .container {
+      grid-template-areas: 'menu content' 'menu footer';
+      grid-template-rows: 1fr auto;
+      grid-template-columns: 300px 1f;
+    }
+   
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+   
+    .menu {
+      background: linear-gradient(
+      rgb(203, 202, 202),
+      rgb(154, 152, 154),
+      rgb(98, 98, 99)
+      );
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+   
+    .home {
+      text-align: left;
+      margin: 7em 0;
+    }
+   
+    .home img {
+      height: 390px;
+      width: 280px;
+      position: absolute;
+      bottom: 130px;
+      left: 83%;
+      transform: translateX(-70%);
+    }
+   
+    .home h1 {
+      font-size: 3em;
+    }
+   
+    .home p {
+      width: 60%;
+    }
+    
+    .kiri{
+      height: 380px;
+      width: 280px;
+    }
+   
+    .kanan{
+      width: 60%;
+      padding: 0;
+    }
+  
+    footer ul {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1em 0;
+    }
+   
+    footer ul li a img {
+      width: 20%;
+    }
+   
+  }
